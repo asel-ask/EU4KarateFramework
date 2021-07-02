@@ -1,0 +1,82 @@
+<testsuite failures="3" name="features/ApiTest1.feature" skipped="0" tests="4" time="9.651713">
+  <testcase classname="features.ApiTest1" name="basic test with status code validation" time="2.219335">
+    <system-out>Given url 'http://api.exchangeratesapi.io/v1/latest?access_key=30446c4718aa5513eb2fcae29599aad3' . passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="features.ApiTest1" name="get rates for specific day" time="3.567203">
+    <failure message="ApiTest1.feature:13 - status code was: 403, expected: 200, response time: 1945, url: https://api.exchangeratesapi.io/v1/2013-12-24?access_key=30446c4718aa5513eb2fcae29599aad3&amp;base=GBP, response: {&quot;error&quot;:{&quot;code&quot;:&quot;https_access_restricted&quot;,&quot;message&quot;:&quot;Access Restricted - Your current Subscription Plan does not support HTTPS Encryption.&quot;}}">Given url 'http://api.exchangeratesapi.io/v1/latest?access_key=30446c4718aa5513eb2fcae29599aad3' . passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+Given url "https://api.exchangeratesapi.io/v1/2013-12-24?access_key=30446c4718aa5513eb2fcae29599aad3&amp;base=GBP" . passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: ApiTest1.feature:13 - status code was: 403, expected: 200, response time: 1945, url: https://api.exchangeratesapi.io/v1/2013-12-24?access_key=30446c4718aa5513eb2fcae29599aad3&amp;base=GBP, response: {"error":{"code":"https_access_restricted","message":"Access Restricted - Your current Subscription Plan does not support HTTPS Encryption."}}&#13;
+	at ✽.Then status 200 (ApiTest1.feature:13)</failure>
+  </testcase>
+  <testcase classname="features.ApiTest1" name="header verification" time="3.154258">
+    <failure message="ApiTest1.feature:18 - status code was: 403, expected: 200, response time: 1941, url: https://api.exchangeratesapi.io/v1/latest?access_key=30446c4718aa5513eb2fcae29599aad3, response: {&quot;error&quot;:{&quot;code&quot;:&quot;https_access_restricted&quot;,&quot;message&quot;:&quot;Access Restricted - Your current Subscription Plan does not support HTTPS Encryption.&quot;}}">Given url 'http://api.exchangeratesapi.io/v1/latest?access_key=30446c4718aa5513eb2fcae29599aad3' . passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+Given url "https://api.exchangeratesapi.io/v1/2013-12-24?access_key=30446c4718aa5513eb2fcae29599aad3&amp;base=GBP" . passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: ApiTest1.feature:13 - status code was: 403, expected: 200, response time: 1945, url: https://api.exchangeratesapi.io/v1/2013-12-24?access_key=30446c4718aa5513eb2fcae29599aad3&amp;base=GBP, response: {"error":{"code":"https_access_restricted","message":"Access Restricted - Your current Subscription Plan does not support HTTPS Encryption."}}&#13;
+	at ✽.Then status 200 (ApiTest1.feature:13)&#13;
+
+Given url 'https://api.exchangeratesapi.io/v1/latest?access_key=30446c4718aa5513eb2fcae29599aad3' . passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: ApiTest1.feature:18 - status code was: 403, expected: 200, response time: 1941, url: https://api.exchangeratesapi.io/v1/latest?access_key=30446c4718aa5513eb2fcae29599aad3, response: {"error":{"code":"https_access_restricted","message":"Access Restricted - Your current Subscription Plan does not support HTTPS Encryption."}}&#13;
+	at ✽.Then status 200 (ApiTest1.feature:18)&#13;
+
+And match header Content-Type == 'application/json' ....................... skipped
+And match header Vary == 'Accept-Encoding' ................................ skipped
+And match header Connection == 'Keep-Alive' ............................... skipped
+And match header Date == '#present' ....................................... skipped</failure>
+  </testcase>
+  <testcase classname="features.ApiTest1" name="json body verification" time="0.710917">
+    <failure message="ApiTest1.feature:31 - path: $['Content-Type'][0], actual: 'application/json; Charset=UTF-8', expected: 'application/json', reason: not equal">Given url 'http://api.exchangeratesapi.io/v1/latest?access_key=30446c4718aa5513eb2fcae29599aad3' . passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+Given url "https://api.exchangeratesapi.io/v1/2013-12-24?access_key=30446c4718aa5513eb2fcae29599aad3&amp;base=GBP" . passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: ApiTest1.feature:13 - status code was: 403, expected: 200, response time: 1945, url: https://api.exchangeratesapi.io/v1/2013-12-24?access_key=30446c4718aa5513eb2fcae29599aad3&amp;base=GBP, response: {"error":{"code":"https_access_restricted","message":"Access Restricted - Your current Subscription Plan does not support HTTPS Encryption."}}&#13;
+	at ✽.Then status 200 (ApiTest1.feature:13)&#13;
+
+Given url 'https://api.exchangeratesapi.io/v1/latest?access_key=30446c4718aa5513eb2fcae29599aad3' . passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: ApiTest1.feature:18 - status code was: 403, expected: 200, response time: 1941, url: https://api.exchangeratesapi.io/v1/latest?access_key=30446c4718aa5513eb2fcae29599aad3, response: {"error":{"code":"https_access_restricted","message":"Access Restricted - Your current Subscription Plan does not support HTTPS Encryption."}}&#13;
+	at ✽.Then status 200 (ApiTest1.feature:18)&#13;
+
+And match header Content-Type == 'application/json' ....................... skipped
+And match header Vary == 'Accept-Encoding' ................................ skipped
+And match header Connection == 'Keep-Alive' ............................... skipped
+And match header Date == '#present' ....................................... skipped
+Given url 'http://api.exchangeratesapi.io/v1/latest?access_key=30446c4718aa5513eb2fcae29599aad3' . passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And match header Content-Type == 'application/json' ....................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: ApiTest1.feature:31 - path: $['Content-Type'][0], actual: 'application/json; Charset=UTF-8', expected: 'application/json', reason: not equal&#13;
+	at ✽.And match header Content-Type == 'application/json' (ApiTest1.feature:31)&#13;
+
+And print response ........................................................ skipped
+And print response.base ................................................... skipped
+And match response.base == 'EUR' .......................................... skipped
+And response.rates.USD == '#present' ...................................... skipped</failure>
+  </testcase>
+</testsuite>

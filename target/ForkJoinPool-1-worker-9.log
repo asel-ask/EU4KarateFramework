@@ -1,0 +1,114 @@
+10:58:09.313 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+10:58:10.964 request:
+1 > GET http://api.exchangeratesapi.io/v1/latest?access_key=30446c4718aa5513eb2fcae29599aad3
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: api.exchangeratesapi.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.2)
+
+10:58:11.558 response time in milliseconds: 555.83
+1 < 200
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 63fb0b53bf1c1f19-FRA
+1 < Connection: keep-alive
+1 < Content-Type: application/json; Charset=UTF-8
+1 < Date: Wed, 14 Apr 2021 06:58:11 GMT
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"max_age":604800,"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=jrUrrAbnwOO%2FhiyYF0elMzc7eMqkQ7UPc%2FK5%2BWTHTB%2Fn3RckQPuy2SzAJH5CfV1wjSwlV9pr3TkFHeWy22GOYs9KP9bsbpCIPGh0kUO6qDbpP4ZiBLaeRQ%3D%3D"}],"group":"cf-nel"}
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=dc48a467d716a3b619f7f1c9abd1b23921618383491; expires=Fri, 14-May-21 06:58:11 GMT; path=/; domain=.exchangeratesapi.io; HttpOnly; SameSite=Lax
+1 < Transfer-Encoding: chunked
+1 < access-control-allow-methods: GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
+1 < access-control-allow-origin: *
+1 < cf-request-id: 0970c5684f00001f1955b1d000000001
+1 < x-apilayer-transaction-id: 09de3820-e2a3-49d4-b32d-3f2b04fad05a
+1 < x-request-time: 0.014
+{"success":true,"timestamp":1618382888,"base":"EUR","date":"2021-04-14","rates":{"AED":4.396433,"AFN":92.883377,"ALL":123.462861,"AMD":621.718309,"ANG":2.148463,"AOA":759.376464,"ARS":110.863262,"AUD":1.558551,"AWG":2.154463,"AZN":2.019586,"BAM":1.968599,"BBD":2.416717,"BDT":101.491928,"BGN":1.957259,"BHD":0.451252,"BIF":2353.152398,"BMD":1.196924,"BND":1.606534,"BOB":8.252635,"BRL":6.843535,"BSD":1.196884,"BTC":1.8543415e-5,"BTN":90.238994,"BWP":13.109655,"BYN":3.156602,"BYR":23459.708549,"BZD":2.41259,"CAD":1.501014,"CDF":2391.453924,"CHF":1.100973,"CLF":0.030716,"CLP":847.545057,"CNY":7.823693,"COP":4390.915348,"CRC":733.832301,"CUC":1.196924,"CUP":31.718483,"CVE":111.050244,"CZK":25.938586,"DJF":212.717762,"DKK":7.437203,"DOP":68.164582,"DZD":158.269533,"EGP":18.778184,"ERN":17.956146,"ETB":49.522704,"EUR":1,"FJD":2.45333,"FKP":0.869416,"GBP":0.867644,"GEL":4.099504,"GGP":0.869416,"GHS":6.924208,"GIP":0.869416,"GMD":61.102761,"GNF":11975.22422,"GTQ":9.237172,"GYD":251.122063,"HKD":9.297645,"HNL":28.875759,"HRK":7.573417,"HTG":97.78794,"HUF":359.322532,"IDR":17497.112421,"ILS":3.92877,"IMP":0.869416,"INR":89.942826,"IQD":1750.501212,"IRR":50396.4809,"ISK":151.685844,"JEP":0.869416,"JMD":177.142262,"JOD":0.848594,"JPY":130.304915,"KES":127.830311,"KGS":101.488737,"KHR":4841.557023,"KMF":493.880699,"KPW":1077.231745,"KRW":1335.234455,"KWD":0.360849,"KYD":0.997382,"KZT":519.282691,"LAK":11275.023442,"LBP":1824.128409,"LKR":241.175109,"LRD":206.592263,"LSL":17.53451,"LTL":3.534205,"LVL":0.724007,"LYD":5.409951,"MAD":10.711244,"MDL":21.412472,"MGA":4518.38806,"MKD":61.713423,"MMK":1687.627478,"MNT":3412.013985,"MOP":9.583544,"MRO":427.301628,"MUR":48.655081,"MVR":18.516538,"MWK":939.585047,"MXN":24.005534,"MYR":4.940918,"MZN":73.957718,"NAD":17.534592,"NGN":457.225012,"NIO":41.96373,"NOK":10.096197,"NPR":144.382752,"NZD":1.685903,"OMR":0.460827,"PAB":1.196884,"PEN":4.325084,"PGK":4.2311,"PHP":58.037042,"PKR":182.950354,"PLN":4.563811,"PYG":7473.539922,"QAR":4.358022,"RON":4.922465,"RSD":118.347668,"RUB":90.583074,"RWF":1172.985427,"SAR":4.489779,"SBD":9.564258,"SCR":20.635395,"SDG":456.623967,"SEK":10.163319,"SGD":1.599952,"SHP":0.869416,"SLL":12238.547236,"SOS":701.39779,"SRD":16.9413,"STD":24811.200851,"SVC":10.473109,"SYP":1505.212495,"SZL":17.534799,"THB":37.613932,"TJS":13.647036,"TMT":4.201203,"TND":3.304112,"TOP":2.732456,"TRY":9.714414,"TTD":8.126213,"TWD":34.060265,"TZS":2775.666701,"UAH":33.546381,"UGX":4338.816445,"USD":1.196924,"UYU":52.794898,"UZS":12570.094936,"VEF":255938504848.22748,"VND":27623.806816,"VUV":131.109684,"WST":3.030285,"XAF":660.245229,"XAG":0.046897,"XAU":0.000685,"XCD":3.234746,"XDR":0.839553,"XOF":660.099384,"XPF":119.99478,"YER":299.619966,"ZAR":17.322603,"ZMK":10773.737152,"ZMW":26.541406,"ZWL":385.409731}}
+
+10:58:11.573 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+10:58:11.573 request:
+1 > GET http://api.exchangeratesapi.io/v1/latest?access_key=30446c4718aa5513eb2fcae29599aad3
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: api.exchangeratesapi.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.2)
+
+10:58:12.276 response time in milliseconds: 702.14
+1 < 200
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 63fb0b577b581d97-NRT
+1 < Connection: keep-alive
+1 < Content-Type: application/json; Charset=UTF-8
+1 < Date: Wed, 14 Apr 2021 06:58:12 GMT
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=er8C45NHshWzHGu3VLyRJj2BotBD6eaNwVKIeqbejMPEhOWV8h25E1H%2B13Ofwqpr1IVpvjrzg%2BE%2B6hGoDYwQuXjl3uFfSIqQzeFFPw7cQ95REp70fFr5GQ%3D%3D"}],"max_age":604800}
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d1979d9ad151278b6f41e4edf908a3d091618383491; expires=Fri, 14-May-21 06:58:11 GMT; path=/; domain=.exchangeratesapi.io; HttpOnly; SameSite=Lax
+1 < Transfer-Encoding: chunked
+1 < access-control-allow-methods: GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
+1 < access-control-allow-origin: *
+1 < cf-request-id: 0970c56aab00001d970fb57000000001
+1 < x-apilayer-transaction-id: b8857c9f-cf10-4e28-90ef-cafcd66b8a4c
+1 < x-request-time: 0.011
+{"success":true,"timestamp":1618382888,"base":"EUR","date":"2021-04-14","rates":{"AED":4.396433,"AFN":92.883377,"ALL":123.462861,"AMD":621.718309,"ANG":2.148463,"AOA":759.376464,"ARS":110.863262,"AUD":1.558551,"AWG":2.154463,"AZN":2.019586,"BAM":1.968599,"BBD":2.416717,"BDT":101.491928,"BGN":1.957259,"BHD":0.451252,"BIF":2353.152398,"BMD":1.196924,"BND":1.606534,"BOB":8.252635,"BRL":6.843535,"BSD":1.196884,"BTC":1.8543415e-5,"BTN":90.238994,"BWP":13.109655,"BYN":3.156602,"BYR":23459.708549,"BZD":2.41259,"CAD":1.501014,"CDF":2391.453924,"CHF":1.100973,"CLF":0.030716,"CLP":847.545057,"CNY":7.823693,"COP":4390.915348,"CRC":733.832301,"CUC":1.196924,"CUP":31.718483,"CVE":111.050244,"CZK":25.938586,"DJF":212.717762,"DKK":7.437203,"DOP":68.164582,"DZD":158.269533,"EGP":18.778184,"ERN":17.956146,"ETB":49.522704,"EUR":1,"FJD":2.45333,"FKP":0.869416,"GBP":0.867644,"GEL":4.099504,"GGP":0.869416,"GHS":6.924208,"GIP":0.869416,"GMD":61.102761,"GNF":11975.22422,"GTQ":9.237172,"GYD":251.122063,"HKD":9.297645,"HNL":28.875759,"HRK":7.573417,"HTG":97.78794,"HUF":359.322532,"IDR":17497.112421,"ILS":3.92877,"IMP":0.869416,"INR":89.942826,"IQD":1750.501212,"IRR":50396.4809,"ISK":151.685844,"JEP":0.869416,"JMD":177.142262,"JOD":0.848594,"JPY":130.304915,"KES":127.830311,"KGS":101.488737,"KHR":4841.557023,"KMF":493.880699,"KPW":1077.231745,"KRW":1335.234455,"KWD":0.360849,"KYD":0.997382,"KZT":519.282691,"LAK":11275.023442,"LBP":1824.128409,"LKR":241.175109,"LRD":206.592263,"LSL":17.53451,"LTL":3.534205,"LVL":0.724007,"LYD":5.409951,"MAD":10.711244,"MDL":21.412472,"MGA":4518.38806,"MKD":61.713423,"MMK":1687.627478,"MNT":3412.013985,"MOP":9.583544,"MRO":427.301628,"MUR":48.655081,"MVR":18.516538,"MWK":939.585047,"MXN":24.005534,"MYR":4.940918,"MZN":73.957718,"NAD":17.534592,"NGN":457.225012,"NIO":41.96373,"NOK":10.096197,"NPR":144.382752,"NZD":1.685903,"OMR":0.460827,"PAB":1.196884,"PEN":4.325084,"PGK":4.2311,"PHP":58.037042,"PKR":182.950354,"PLN":4.563811,"PYG":7473.539922,"QAR":4.358022,"RON":4.922465,"RSD":118.347668,"RUB":90.583074,"RWF":1172.985427,"SAR":4.489779,"SBD":9.564258,"SCR":20.635395,"SDG":456.623967,"SEK":10.163319,"SGD":1.599952,"SHP":0.869416,"SLL":12238.547236,"SOS":701.39779,"SRD":16.9413,"STD":24811.200851,"SVC":10.473109,"SYP":1505.212495,"SZL":17.534799,"THB":37.613932,"TJS":13.647036,"TMT":4.201203,"TND":3.304112,"TOP":2.732456,"TRY":9.714414,"TTD":8.126213,"TWD":34.060265,"TZS":2775.666701,"UAH":33.546381,"UGX":4338.816445,"USD":1.196924,"UYU":52.794898,"UZS":12570.094936,"VEF":255938504848.22748,"VND":27623.806816,"VUV":131.109684,"WST":3.030285,"XAF":660.245229,"XAG":0.046897,"XAU":0.000685,"XCD":3.234746,"XDR":0.839553,"XOF":660.099384,"XPF":119.99478,"YER":299.619966,"ZAR":17.322603,"ZMK":10773.737152,"ZMW":26.541406,"ZWL":385.409731}}
+
+10:58:12.292 assertion failed: path: $['Content-Type'][0], actual: 'application/json; Charset=UTF-8', expected: 'application/json', reason: not equal
+10:58:12.307 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+10:58:12.323 request:
+1 > GET https://cybertek-reservation-api-qa2.herokuapp.com/sign?email=sbirdbj%40fc2.com&password=asenorval
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: cybertek-reservation-api-qa2.herokuapp.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.2)
+
+10:58:13.730 response time in milliseconds: 1403.30
+1 < 200
+1 < Connection: close
+1 < Content-Type: application/json
+1 < Date: Wed, 14 Apr 2021 06:58:12 GMT
+1 < Server: Jetty(9.4.8.v20171121)
+1 < Via: 1.1 vegur
+{"accessToken":"eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI1NyIsImF1ZCI6InN0dWRlbnQtdGVhbS1sZWFkZXIifQ.a_N9URDBPGOMcDdEVoaMHsJtk3jOnig0v0SCtSWcsGE","refreshToken":"eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI1NyIsImF1ZCI6InN0dWRlbnQtdGVhbS1sZWFkZXIifQ.a_N9URDBPGOMcDdEVoaMHsJtk3jOnig0v0SCtSWcsGE"}
+
+10:58:13.735 [print] eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI1NyIsImF1ZCI6InN0dWRlbnQtdGVhbS1sZWFkZXIifQ.a_N9URDBPGOMcDdEVoaMHsJtk3jOnig0v0SCtSWcsGE
+10:58:13.755 [print] Token from background eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI1NyIsImF1ZCI6InN0dWRlbnQtdGVhbS1sZWFkZXIifQ.a_N9URDBPGOMcDdEVoaMHsJtk3jOnig0v0SCtSWcsGE
+10:58:13.787 request:
+1 > GET https://cybertek-reservation-api-qa2.herokuapp.com/api/campuses
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI1NyIsImF1ZCI6InN0dWRlbnQtdGVhbS1sZWFkZXIifQ.a_N9URDBPGOMcDdEVoaMHsJtk3jOnig0v0SCtSWcsGE
+1 > Connection: Keep-Alive
+1 > Host: cybertek-reservation-api-qa2.herokuapp.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.2)
+
+10:58:14.718 response time in milliseconds: 934.28
+1 < 200
+1 < Connection: close
+1 < Content-Type: application/json
+1 < Date: Wed, 14 Apr 2021 06:58:14 GMT
+1 < Server: Jetty(9.4.8.v20171121)
+1 < Via: 1.1 vegur
+[{"id":1,"location":"VA","clusters":[{"id":3,"name":"light-side","rooms":[{"id":111,"name":"mit","description":"mens et manus","capacity":6,"withTV":true,"withWhiteBoard":true},{"id":112,"name":"harvard","description":"veritas","capacity":6,"withTV":true,"withWhiteBoard":false},{"id":113,"name":"yale","description":"lux et veritas","capacity":6,"withTV":true,"withWhiteBoard":false},{"id":114,"name":"princeton","description":"dei sub numine viget","capacity":4,"withTV":true,"withWhiteBoard":false},{"id":115,"name":"stanford","description":"die luft der freiheit weht","capacity":6,"withTV":false,"withWhiteBoard":true},{"id":116,"name":"duke","description":"eruditio et religio","capacity":4,"withTV":true,"withWhiteBoard":false},{"id":117,"name":"berkeley","description":"fiat lux","capacity":4,"withTV":true,"withWhiteBoard":false}]},{"id":4,"name":"dark-side","rooms":[{"id":121,"name":"kilimanjaro","description":"it isn\u0027t the mountains ahead to climb that wear you out, it\u0027s the pebble in your shoe","capacity":6,"withTV":true,"withWhiteBoard":true},{"id":122,"name":"half dome","description":"faith moves mountains","capacity":6,"withTV":true,"withWhiteBoard":true},{"id":123,"name":"denali","description":"you can\u0027t move mountains by whispering at them","capacity":4,"withTV":true,"withWhiteBoard":true},{"id":124,"name":"meru","description":"every mountain top is within reach if you just keep climbing","capacity":4,"withTV":true,"withWhiteBoard":true}]}]}, {"id":2,"location":"IL","clusters":[{"id":5,"name":"il","rooms":[{"id":211,"name":"google","description":"don\u0027t be evil","capacity":6,"withTV":true,"withWhiteBoard":true},{"id":212,"name":"apple","description":"think different","capacity":6,"withTV":true,"withWhiteBoard":true},{"id":213,"name":"microsoft","description":"be what\u0027s next","capacity":6,"withTV":true,"withWhiteBoard":true},{"id":214,"name":"bay_area","description":"make future","capacity":6,"withTV":true,"withWhiteBoard":true},{"id":215,"name":"amazon","description":"work hard. have fun. make history","capacity":6,"withTV":true,"withWhiteBoard":true},{"id":216,"name":"tesla","description":"just do it","capacity":6,"withTV":true,"withWhiteBoard":true},{"id":217,"name":"facebook","description":"move fast and break things","capacity":6,"withTV":true,"withWhiteBoard":true}]}]}]
+
+10:58:14.733 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+10:58:14.780 request:
+1 > POST http://34.228.41.120:8000/api/spartans
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 55
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 34.228.41.120:8000
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.2)
+{"gender":"Female","name":"Lorenza","phone":3123781237}
+
+10:58:15.202 response time in milliseconds: 423.41
+1 < 500
+1 < Connection: close
+1 < Content-Type: application/json
+1 < Date: Wed, 14 Apr 2021 06:58:05 GMT
+1 < Transfer-Encoding: chunked
+{"timestamp":"2021-04-14T06:58:05.871+00:00","status":500,"error":"Internal Server Error","message":"","path":"/api/spartans"}
+
+10:58:15.202 status code was: 500, expected: 201, response time: 423, url: http://34.228.41.120:8000/api/spartans, response: {"path":"/api/spartans","error":"Internal Server Error","message":"","timestamp":"2021-04-14T06:58:05.871+00:00","status":500}

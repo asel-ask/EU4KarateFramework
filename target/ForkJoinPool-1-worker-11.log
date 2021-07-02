@@ -1,0 +1,164 @@
+10:58:09.313 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+10:58:10.964 request:
+1 > GET https://api.exchangeratesapi.io/v1/2013-12-24?access_key=30446c4718aa5513eb2fcae29599aad3&base=GBP
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: api.exchangeratesapi.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.2)
+
+10:58:12.901 response time in milliseconds: 1944.75
+1 < 403
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 63fb0b5b49bba528-NRT
+1 < Connection: keep-alive
+1 < Content-Type: application/json; Charset=UTF-8
+1 < Date: Wed, 14 Apr 2021 06:58:12 GMT
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=1oqmMGbDEMxlX47hB%2FSPJertEkTrZ2AUay1IidZv%2BHaYRuJ7ANtsqsyBVs%2F9Uj5fcow%2Bf2P1X%2Bmy4dLS%2BSj5DEXR%2F3lvnE%2FndOtf1hnlXxmAn%2BiIXmAqfQ%3D%3D"}]}
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d7a6865e4938e11a9e24ac70423cdc84c1618383492; expires=Fri, 14-May-21 06:58:12 GMT; path=/; domain=.exchangeratesapi.io; HttpOnly; SameSite=Lax
+1 < Transfer-Encoding: chunked
+1 < access-control-allow-methods: GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
+1 < access-control-allow-origin: *
+1 < cf-request-id: 0970c56d110000a528dd203000000001
+1 < x-apilayer-transaction-id: b0d70529-301a-4145-833e-3007b19af2ff
+{"error":{"code":"https_access_restricted","message":"Access Restricted - Your current Subscription Plan does not support HTTPS Encryption."}}
+
+10:58:12.901 status code was: 403, expected: 200, response time: 1945, url: https://api.exchangeratesapi.io/v1/2013-12-24?access_key=30446c4718aa5513eb2fcae29599aad3&base=GBP, response: {"error":{"code":"https_access_restricted","message":"Access Restricted - Your current Subscription Plan does not support HTTPS Encryption."}}
+10:58:12.917 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+10:58:12.917 [print] Hello World
+10:58:12.932 [print] another print
+10:58:12.948 [print] the print
+10:58:12.964 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+10:58:12.979 [print] some words to print
+10:58:12.979 [print] my name is karate kid
+10:58:12.995 [print] 4
+10:58:12.995 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+10:58:13.011 [print] my name is Mike
+10:58:13.026 [print] Mike is 20 years old
+10:58:13.042 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+10:58:13.042 [print] {
+  "name": "sam",
+  "owes_tution": false
+}
+
+10:58:13.042 [print] sam
+10:58:13.042 [print] false
+10:58:13.057 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+10:58:13.057 [print] Steven
+10:58:13.073 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+10:58:13.073 [print] Male
+10:58:13.089 [print] BlaBla
+10:58:13.089 [print] 12345647895
+10:58:13.104 [print] 603
+10:58:13.104 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+10:58:13.104 [print] [
+  {
+    "name": "sam",
+    "owes_tution": false
+  },
+  {
+    "name": "Mike",
+    "owes_tution": true
+  }
+]
+
+10:58:13.136 [print] sam
+10:58:13.151 [print] true
+10:58:13.182 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+10:58:13.182 request:
+1 > GET http://api.exchangeratesapi.io/v1/2010-01-12?access_key=30446c4718aa5513eb2fcae29599aad3
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: api.exchangeratesapi.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.2)
+
+10:58:13.914 response time in milliseconds: 715.79
+1 < 200
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 63fb0b619f3f5f53-NRT
+1 < Connection: keep-alive
+1 < Content-Type: application/json; Charset=UTF-8
+1 < Date: Wed, 14 Apr 2021 06:58:13 GMT
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=7ssCtTaT7jKHoVXXk6qWJzJBQ%2FTBPOovDKgtvk9tiT2YkRCB%2Fg2UB2mJfEHVvuErksg2lxovmVYKQEA%2FZ361Q44CvrYT1bh4tLCGttI%2FCbh%2BLx9oF4BeCQ%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d0117d946a476f6675a25f827276356cd1618383493; expires=Fri, 14-May-21 06:58:13 GMT; path=/; domain=.exchangeratesapi.io; HttpOnly; SameSite=Lax
+1 < Transfer-Encoding: chunked
+1 < access-control-allow-methods: GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
+1 < access-control-allow-origin: *
+1 < cf-request-id: 0970c570fa00005f5348b26000000001
+1 < x-apilayer-transaction-id: 9c66befe-c997-4e35-b5b2-217c6cf8396a
+1 < x-request-time: 0.010
+{"success":true,"timestamp":1263340799,"historical":true,"base":"EUR","date":"2010-01-12","rates":{"AED":5.325185,"AFN":70.943794,"ALL":135.751099,"AMD":548.206364,"ANG":2.596785,"AOA":129.739083,"ARS":5.49596,"AUD":1.571361,"AWG":2.595698,"AZN":1.163405,"BAM":1.958367,"BBD":2.899816,"BDT":101.347991,"BGN":1.958257,"BHD":0.545854,"BIF":1657.180218,"BMD":1.449908,"BND":2.022374,"BOB":10.174643,"BRL":2.530237,"BSD":1.449908,"BTN":66.207707,"BWP":9.791263,"BYR":4106.862888,"BZD":2.881692,"CAD":1.503115,"CDF":1290.185339,"CHF":1.475449,"CLP":711.924125,"CNY":9.899524,"COP":2842.234212,"CRC":824.98748,"CVE":110.399656,"CZK":26.25533,"DJF":257.679074,"DKK":7.441588,"DOP":52.300654,"DZD":103.463688,"EGP":7.891138,"ETB":15.499402,"EUR":1,"FJD":2.704568,"FKP":0.897551,"GBP":0.89726,"GEL":2.467423,"GHS":2.068291,"GIP":0.898319,"GMD":37.872066,"GNF":7248.226851,"GTQ":12.103086,"GYD":298.499901,"HKD":11.244233,"HNL":27.435881,"HRK":7.27549,"HTG":58.34819,"HUF":268.239104,"IDR":13298.767069,"ILS":5.353142,"INR":66.216679,"IQD":1675.307563,"IRR":14313.511955,"ISK":180.14929,"JMD":129.074028,"JOD":1.027078,"JPY":132.167066,"KES":109.647061,"KGS":64.005095,"KHR":6020.723558,"KMF":492.58219,"KPW":207.368098,"KRW":1627.349206,"KWD":0.416041,"KZT":214.666089,"LAK":12284.473241,"LBP":2176.961383,"LKR":165.666208,"LRD":101.453106,"LSL":10.816584,"LTL":3.457111,"LVL":0.706933,"LYD":1.781481,"MAD":11.347439,"MDL":17.820216,"MGA":2902.708885,"MKD":61.44101,"MMK":9.4389,"MNT":2134.127176,"MOP":11.599415,"MRO":377.987751,"MUR":42.83623,"MVR":18.558821,"MWK":212.91273,"MXN":18.479808,"MYR":4.84732,"MZN":43.642095,"NAD":10.812597,"NGN":218.62006,"NIO":28.01225,"NOK":8.1883,"NPR":103.683208,"NZD":1.960007,"OMR":0.557485,"PAB":1.449908,"PEN":4.356355,"PGK":3.893087,"PHP":66.208743,"PKR":122.681747,"PLN":4.088898,"PYG":6787.82825,"QAR":5.277665,"RON":4.142674,"RSD":97.035668,"RUB":42.550959,"RWF":828.455799,"SAR":5.437336,"SBD":11.388874,"SCR":16.094383,"SDG":3.238217,"SEK":10.225245,"SGD":2.014989,"SHP":0.897551,"SLL":5581.023026,"SOS":2174.851774,"SRD":3.936491,"STD":23895.173219,"SVC":12.682579,"SYP":65.970547,"SZL":10.809234,"THB":47.886113,"TJS":6.338311,"TND":1.895746,"TOP":2.702647,"TRY":2.109809,"TTD":9.156531,"TWD":46.108109,"TZS":1933.447404,"UAH":11.635743,"UGX":2785.270793,"USD":1.449908,"UYU":28.200645,"UZS":2221.590052,"VEF":6.226847,"VND":26779.70763,"VUV":138.683447,"WST":3.737181,"XAF":695.287151,"XCD":3.725957,"XDR":0.92195,"XOF":661.468051,"XPF":120.183373,"YER":296.505597,"ZAR":10.797906,"ZMK":6565.17281}}
+
+10:58:13.921 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+10:58:13.929 request:
+1 > GET http://34.228.41.120:8000/api/spartans/632
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 34.228.41.120:8000
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.2)
+
+10:58:14.311 response time in milliseconds: 392.90
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Wed, 14 Apr 2021 06:58:04 GMT
+1 < Keep-Alive: timeout=60
+1 < Transfer-Encoding: chunked
+{"id":632,"name":"Lucais","gender":"Female","phone":2786952162}
+
+10:58:14.311 [print] {
+  "gender": "Female",
+  "phone": 2786952162,
+  "name": "Lucais",
+  "id": 632
+}
+
+10:58:14.327 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+10:58:14.327 request:
+1 > GET http://34.228.41.120:8000/api/spartans/632
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 34.228.41.120:8000
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.2)
+
+10:58:14.749 response time in milliseconds: 428.81
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Wed, 14 Apr 2021 06:58:04 GMT
+1 < Keep-Alive: timeout=60
+1 < Transfer-Encoding: chunked
+{"id":632,"name":"Lucais","gender":"Female","phone":2786952162}
+
+10:58:14.765 [print] {
+  "gender": "Female",
+  "phone": 2786952162,
+  "name": "Lucais",
+  "id": 632
+}
+
+10:58:14.765 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+10:58:14.780 request:
+1 > POST http://34.228.41.120:8000/api/spartans
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 54
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 34.228.41.120:8000
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.2)
+{"name":"Katrine","phone":555647896,"gender":"Female"}
+
+10:58:15.186 response time in milliseconds: 410.25
+1 < 400
+1 < Connection: close
+1 < Content-Type: application/json
+1 < Date: Wed, 14 Apr 2021 06:58:05 GMT
+1 < Transfer-Encoding: chunked
+{"timestamp":"2021-04-14T06:58:05.840+00:00","status":400,"error":"Bad Request","message":"","path":"/api/spartans"}
+
+10:58:15.186 status code was: 400, expected: 201, response time: 410, url: http://34.228.41.120:8000/api/spartans, response: {"path":"/api/spartans","error":"Bad Request","message":"","timestamp":"2021-04-14T06:58:05.840+00:00","status":400}

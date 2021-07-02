@@ -1,0 +1,171 @@
+<testsuite failures="3" name="features/SpartanWithJava.feature" skipped="0" tests="5" time="3.226861">
+  <testcase classname="features.SpartanWithJava" name="Get a spartan with request header" time="1.021499">
+    <system-out>* def spartanUrl = 'http://34.228.41.120:8000' ............................ passed
+Given url spartanUrl ...................................................... passed
+And path "api/spartans" ................................................... passed
+And header Accept = 'application/json' .................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="features.SpartanWithJava" name="Create a new spartan" time="0.471133">
+    <failure message="SpartanWithJava.feature:28 - status code was: 500, expected: 201, response time: 423, url: http://34.228.41.120:8000/api/spartans, response: {&quot;path&quot;:&quot;/api/spartans&quot;,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;message&quot;:&quot;&quot;,&quot;timestamp&quot;:&quot;2021-04-14T06:58:05.871+00:00&quot;,&quot;status&quot;:500}">* def spartanUrl = 'http://34.228.41.120:8000' ............................ passed
+Given url spartanUrl ...................................................... passed
+And path "api/spartans" ................................................... passed
+And header Accept = 'application/json' .................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* def spartanUrl = 'http://34.228.41.120:8000' ............................ passed
+Given url spartanUrl ...................................................... passed
+And path "api/spartans" ................................................... passed
+And header Accept = 'application/json' .................................... passed
+And header Content-Type = 'application/json' .............................. passed
+And request ............................................................... passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: SpartanWithJava.feature:28 - status code was: 500, expected: 201, response time: 423, url: http://34.228.41.120:8000/api/spartans, response: {"path":"/api/spartans","error":"Internal Server Error","message":"","timestamp":"2021-04-14T06:58:05.871+00:00","status":500}&#13;
+	at ✽.Then status 201 (SpartanWithJava.feature:28)&#13;
+
+And print response ........................................................ skipped</failure>
+  </testcase>
+  <testcase classname="features.SpartanWithJava" name="Create a new spartan" time="0.423186">
+    <failure message="SpartanWithJava.feature:45 - status code was: 400, expected: 201, response time: 410, url: http://34.228.41.120:8000/api/spartans, response: {&quot;path&quot;:&quot;/api/spartans&quot;,&quot;error&quot;:&quot;Bad Request&quot;,&quot;message&quot;:&quot;&quot;,&quot;timestamp&quot;:&quot;2021-04-14T06:58:05.840+00:00&quot;,&quot;status&quot;:400}">* def spartanUrl = 'http://34.228.41.120:8000' ............................ passed
+Given url spartanUrl ...................................................... passed
+And path "api/spartans" ................................................... passed
+And header Accept = 'application/json' .................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* def spartanUrl = 'http://34.228.41.120:8000' ............................ passed
+Given url spartanUrl ...................................................... passed
+And path "api/spartans" ................................................... passed
+And header Accept = 'application/json' .................................... passed
+And header Content-Type = 'application/json' .............................. passed
+And request ............................................................... passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: SpartanWithJava.feature:28 - status code was: 500, expected: 201, response time: 423, url: http://34.228.41.120:8000/api/spartans, response: {"path":"/api/spartans","error":"Internal Server Error","message":"","timestamp":"2021-04-14T06:58:05.871+00:00","status":500}&#13;
+	at ✽.Then status 201 (SpartanWithJava.feature:28)&#13;
+
+And print response ........................................................ skipped
+* def spartanUrl = 'http://34.228.41.120:8000' ............................ passed
+Given url spartanUrl ...................................................... passed
+And path 'api/spartans' ................................................... passed
+And header Accept = 'application/json' .................................... passed
+And header Content-Type = 'application/json' .............................. passed
+And request ............................................................... passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: SpartanWithJava.feature:45 - status code was: 400, expected: 201, response time: 410, url: http://34.228.41.120:8000/api/spartans, response: {"path":"/api/spartans","error":"Bad Request","message":"","timestamp":"2021-04-14T06:58:05.840+00:00","status":400}&#13;
+	at ✽.Then status 201 (SpartanWithJava.feature:45)&#13;
+
+And print response ........................................................ skipped</failure>
+  </testcase>
+  <testcase classname="features.SpartanWithJava" name="reading java metod (point the clASS)" time="0.567141">
+    <system-out>* def spartanUrl = 'http://34.228.41.120:8000' ............................ passed
+Given url spartanUrl ...................................................... passed
+And path "api/spartans" ................................................... passed
+And header Accept = 'application/json' .................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* def spartanUrl = 'http://34.228.41.120:8000' ............................ passed
+Given url spartanUrl ...................................................... passed
+And path "api/spartans" ................................................... passed
+And header Accept = 'application/json' .................................... passed
+And header Content-Type = 'application/json' .............................. passed
+And request ............................................................... passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: SpartanWithJava.feature:28 - status code was: 500, expected: 201, response time: 423, url: http://34.228.41.120:8000/api/spartans, response: {"path":"/api/spartans","error":"Internal Server Error","message":"","timestamp":"2021-04-14T06:58:05.871+00:00","status":500}&#13;
+	at ✽.Then status 201 (SpartanWithJava.feature:28)&#13;
+
+And print response ........................................................ skipped
+* def spartanUrl = 'http://34.228.41.120:8000' ............................ passed
+Given url spartanUrl ...................................................... passed
+And path 'api/spartans' ................................................... passed
+And header Accept = 'application/json' .................................... passed
+And header Content-Type = 'application/json' .............................. passed
+And request ............................................................... passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: SpartanWithJava.feature:45 - status code was: 400, expected: 201, response time: 410, url: http://34.228.41.120:8000/api/spartans, response: {"path":"/api/spartans","error":"Bad Request","message":"","timestamp":"2021-04-14T06:58:05.840+00:00","status":400}&#13;
+	at ✽.Then status 201 (SpartanWithJava.feature:45)&#13;
+
+And print response ........................................................ skipped
+* def spartanUrl = 'http://34.228.41.120:8000' ............................ passed
+* def SpartanDataGenerator = Java.type('utilities.SpartanDataGenerator') .. passed
+* def newSpartan = SpartanDataGenerator.createSpartan() ................... passed
+* print newSpartan ........................................................ passed</system-out>
+  </testcase>
+  <testcase classname="features.SpartanWithJava" name="Create a spartan with Random Data (Java) and delete it" time="0.743904">
+    <failure message="SpartanWithJava.feature:65 - status code was: 500, expected: 201, response time: 411, url: http://34.228.41.120:8000/api/spartans, response: {&quot;path&quot;:&quot;/api/spartans&quot;,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;message&quot;:&quot;&quot;,&quot;timestamp&quot;:&quot;2021-04-14T06:58:06.449+00:00&quot;,&quot;status&quot;:500}">* def spartanUrl = 'http://34.228.41.120:8000' ............................ passed
+Given url spartanUrl ...................................................... passed
+And path "api/spartans" ................................................... passed
+And header Accept = 'application/json' .................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* def spartanUrl = 'http://34.228.41.120:8000' ............................ passed
+Given url spartanUrl ...................................................... passed
+And path "api/spartans" ................................................... passed
+And header Accept = 'application/json' .................................... passed
+And header Content-Type = 'application/json' .............................. passed
+And request ............................................................... passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: SpartanWithJava.feature:28 - status code was: 500, expected: 201, response time: 423, url: http://34.228.41.120:8000/api/spartans, response: {"path":"/api/spartans","error":"Internal Server Error","message":"","timestamp":"2021-04-14T06:58:05.871+00:00","status":500}&#13;
+	at ✽.Then status 201 (SpartanWithJava.feature:28)&#13;
+
+And print response ........................................................ skipped
+* def spartanUrl = 'http://34.228.41.120:8000' ............................ passed
+Given url spartanUrl ...................................................... passed
+And path 'api/spartans' ................................................... passed
+And header Accept = 'application/json' .................................... passed
+And header Content-Type = 'application/json' .............................. passed
+And request ............................................................... passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: SpartanWithJava.feature:45 - status code was: 400, expected: 201, response time: 410, url: http://34.228.41.120:8000/api/spartans, response: {"path":"/api/spartans","error":"Bad Request","message":"","timestamp":"2021-04-14T06:58:05.840+00:00","status":400}&#13;
+	at ✽.Then status 201 (SpartanWithJava.feature:45)&#13;
+
+And print response ........................................................ skipped
+* def spartanUrl = 'http://34.228.41.120:8000' ............................ passed
+* def SpartanDataGenerator = Java.type('utilities.SpartanDataGenerator') .. passed
+* def newSpartan = SpartanDataGenerator.createSpartan() ................... passed
+* print newSpartan ........................................................ passed
+* def spartanUrl = 'http://34.228.41.120:8000' ............................ passed
+* def SDG = Java.type('utilities.SpartanDataGenerator') ................... passed
+* def newSpartan =  SDG.createSpartan() ................................... passed
+Given url spartanUrl ...................................................... passed
+And path 'api/spartans' ................................................... passed
+And header Accept = 'application/json' .................................... passed
+And header Content-Type = 'application/json' .............................. passed
+And request newSpartan .................................................... passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: SpartanWithJava.feature:65 - status code was: 500, expected: 201, response time: 411, url: http://34.228.41.120:8000/api/spartans, response: {"path":"/api/spartans","error":"Internal Server Error","message":"","timestamp":"2021-04-14T06:58:06.449+00:00","status":500}&#13;
+	at ✽.Then status 201 (SpartanWithJava.feature:65)&#13;
+
+And print response ........................................................ skipped
+And match response.success == 'A Spartan is Born!' ........................ skipped
+And match response.data.name == newSpartan.name ........................... skipped
+And def IDtoDelete = response.data.id ..................................... skipped
+Given url spartanUrl ...................................................... skipped
+And path 'api/spartans',IDtoDelete ........................................ skipped
+When method DELETE ........................................................ skipped
+Then status 204 ........................................................... skipped</failure>
+  </testcase>
+</testsuite>
